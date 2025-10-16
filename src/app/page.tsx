@@ -1,9 +1,30 @@
 "use client";
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Service from '@/components/Service';
+import Subsribe from '@/components/Subscribe';
+import Project from '@/components/Project';
+import Testimoni from '@/components/Testimoni';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600">
-      <h1 className="text-4xl font-bold text-white">Next.js + Tailwind ✅</h1>
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Service />
+      <Subsribe />
+      <Project />
+      <Testimoni />
+      <Contact />
+      <Footer />
+      <div className="w-full flex bg-white ">
+
+      </div>
     </div>
   );
 }
