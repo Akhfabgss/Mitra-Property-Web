@@ -51,7 +51,7 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm text-[#5067EB] mb-1">Message</label>
               <textarea
-                rows="4"
+                rows={4}
                 placeholder="Masukan Pesan ...."
                 className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5067EB]"
               ></textarea>

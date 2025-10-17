@@ -92,10 +92,21 @@ export default function RecentProject() {
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           }}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
+        onBeforeInit={(swiper) => {
+        // Pastikan navigation bukan boolean dan bukan undefined
+        if (
+            typeof swiper.params.navigation !== "boolean" &&
+            swiper.params.navigation
+        ) {
+            swiper.params.navigation.prevEl = prevRef.current!;
+            swiper.params.navigation.nextEl = nextRef.current!;
+        }
+
+        // Optional tapi disarankan: inisialisasi ulang navigation
+        swiper.navigation.init();
+        swiper.navigation.update();
+        }}
+
           breakpoints={{
             0: { slidesPerView: 1 },
             640: { slidesPerView: 2 },

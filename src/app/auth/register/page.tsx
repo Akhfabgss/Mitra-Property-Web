@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -92,7 +93,7 @@ export default function RegisterPage() {
           <p className="text-center text-gray-600 text-sm">
             I Ready have account?{" "}
             <Link
-              href="/login"
+              href="/auth/login"
               className="text-[#5067EB] hover:underline font-medium"
             >
               Login

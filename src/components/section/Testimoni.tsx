@@ -1,15 +1,17 @@
 "use client";
 import { useRef } from "react";
+
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperClass } from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function TestimoniSection() {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperClass | null>(null);
 
   const testimonials = [
     {

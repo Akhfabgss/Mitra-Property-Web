@@ -1,14 +1,14 @@
 "use client";
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Service from '@/components/Service';
-import Subsribe from '@/components/Subscribe';
-import Project from '@/components/Project';
-import Testimoni from '@/components/Testimoni';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Hero from '@/components/section/Hero';
+import About from '@/components/section/About';
+import Service from '@/components/section/Service';
+import Subsribe from '@/components/section/Subscribe';
+import Project from '@/components/section/Project';
+import Testimoni from '@/components/section/Testimoni';
+import Contact from '@/components/section/Contact';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
