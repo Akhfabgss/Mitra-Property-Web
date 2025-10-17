@@ -30,7 +30,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="fixed top-0 left-0 h-full w-64 bg-primary text-white flex flex-col">
+    <div className="fixed top-0 left-0 h-full w-64 bg-biru text-white flex flex-col">
       {/* Header */}
       <div className="p-6 flex items-center justify-center mt-8">
         <h1 className="text-2xl font-bold">MITRA PROPERTI</h1>
@@ -53,7 +53,7 @@ export default function Sidebar() {
                   ${
                     isActiveParent
                       ? "bg-white/20 text-white"
-                      : "text-white/80 hover:bg-primary hover:text-white"
+                      : "text-white/80 hover:bg-biru hover:text-white"
                   }`}
               >
                 {Icon && <Icon size={25} color="white" />}

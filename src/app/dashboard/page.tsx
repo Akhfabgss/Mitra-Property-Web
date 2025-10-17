@@ -3,7 +3,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className="bg-primary text-white rounded-xl flex flex-col md:flex-row justify-between">
+    <div className="bg-biru text-white rounded-xl flex flex-col md:flex-row justify-between">
             {/* Text bagian kiri */}
             <div className="flex flex-col justify-between px-10 py-10">
               <div>
@@ -23,7 +23,7 @@ function page() {
             />
           </div>
 
-          
+
   )
 }
 
